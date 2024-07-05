@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sastamobile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link id="tab_pic" rel="icon" href="images/nav.jpeg" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="navbar-left">
+                <h1> <span id="nam">Sasta</span>Mobile.pk</h1>
+            </div>
+            <div class="navbar-right">
+                <label for="company-filter">Brand Name:</label>
+                <select id="company-filter" onchange="filterByCompany()">
+                    <option value="all">All</option>
+                    
+                </select>
+            </div>
+        </div>
+    </nav>
+    <div id="card-container"></div>
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="product-details"></div>
+            <button class="buy-button" onclick="buyProduct()">Buy</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
